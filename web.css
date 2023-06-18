@@ -1,0 +1,780 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+/* 導覽列 */
+nav {
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  box-shadow: 0 0.75px 3px rgb(114, 114, 114);
+  position: fixed;
+  top: 0;
+}
+
+/* 導覽列 Left */
+.one-left {
+  width: 40%;
+  margin: 0 400px 0 20px;
+  display: flex;
+  align-items: center;
+}
+.one-left a {
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.one-left a .logo {
+  width: 40px;
+  margin-right: 10px;
+  padding-top: 2px;
+}
+.one-left a h3 {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+}
+.one-left a h3:hover {
+  transition: all 0.5s 0s ease-in;
+  color: red;
+}
+
+/* 導覽列 Right */
+.one-right {
+  /* background-color: #f88a8a; */
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.one-right a {
+  /* background-color: #693f3f; */
+  text-decoration: none;
+  margin: 0 10px;
+  color: #303030;
+  font-weight: 300;
+  font-size: 18px;
+  border-bottom: 2px solid transparent;
+  padding: 22px 0;
+}
+.one-right a:hover {
+  color: red;
+  border-bottom-color: red;
+  transition: all 0.5s 0s ease-in;
+}
+
+/* 圖片 */
+.pic-one {
+  /* border: 10px solid rgb(117, 70, 228); */
+  margin-top: 80px;
+  display: block;
+  width: 1280px;
+  margin-inline: auto;
+}
+.pic-one img {
+  width: 1280px;
+  height: 650px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+/* 主要內容 */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 畫面設定 1280px */
+.one {
+  /* background-color:#aaa; */
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 小標題 */
+.one .w2 {
+  margin: 25px 0 20px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.one .w2::after {
+  content: "";
+  display: block;
+  background-color: #f00;
+  width: 50px;
+  height: 2px;
+  margin: 10px auto;
+}
+.one .w4 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+/* 3張卡片做成1個div */
+.one-card {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 300px;
+}
+.one-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.one-list img {
+  width: 55%;
+}
+.one-list h4 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 20px 0 10px;
+}
+
+.one-list p {
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* 老師文字 */
+.one-text {
+  /* background-color: #fa0; */
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.one-text h2 {
+  /* background-color: rgb(102, 90, 67); */
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.one-text h2::after {
+  content: "";
+  display: block;
+  background-color: #f00;
+  width: 45px;
+  height: 2px;
+  margin: 8px 0;
+}
+.one-text h4 {
+  /* background-color: rgb(71, 30, 124); */
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin: 25px 0 100px;
+}
+
+/* 第2部分 老師卡片 */
+.two {
+  /* background-color: #a3f6fc; */
+  width: 1280px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 0 200px 0;
+}
+/* 6張卡片做成1個div */
+.two-card {
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  width: 570px;
+  height: 600px;
+  margin: 10px 15px;
+  box-shadow: 0px 0 1px rgb(53, 53, 53);
+  border-radius: 5px;
+}
+.card-h {
+  height: 450px;
+}
+/* img + 一些文字資訊 */
+.two-top {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px;
+}
+.two-top .pic {
+  border-radius: 100px;
+  width: 27%;
+}
+.two-text {
+  margin: 0 20px;
+}
+.two-text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.two-text p::after {
+  display: block;
+  content: "";
+  width: 37px;
+  height: 2px;
+  background-color: red;
+  margin: 5px 0;
+}
+.two-text h3 {
+  margin: 20px 0 16px;
+  font-size: 1.3rem;
+}
+.two-text img {
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+}
+
+.two-p {
+  margin: 25px 0;
+  /* background-color: #fa0; */
+}
+.two-p p {
+  margin: 0 0 10px 0;
+  font-weight: 300;
+}
+
+.two-p a {
+  text-decoration: none;
+  color: red;
+}
+.two-p a:hover {
+  text-decoration: underline;
+}
+.two-line {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 0;
+  font-weight: 300;
+}
+.two-line hr {
+  margin: 0 0 0 10px;
+  width: 403px;
+  height: 0.1px;
+}
+.two-a {
+  margin: 12px 0;
+}
+
+.two-a a {
+  text-decoration: none;
+  color: red;
+  border: 1px solid red;
+  margin: 0 15px 0 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: 300;
+}
+.two-a a:hover {
+  color: white;
+  background-color: rgb(253, 79, 79);
+  transition: all 0.2s ease-in;
+}
+
+.two-btm {
+  display: flex;
+  flex-direction: column;
+}
+.two-btm a {
+  text-decoration: none;
+  color: red;
+  border: 1px solid red;
+  margin: 0 0 15px 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: center;
+  width: 300px;
+  font-weight: 300;
+}
+.two-btm a:hover {
+  color: white;
+  background-color: rgb(253, 79, 79);
+  transition: all 0.2s ease-in;
+}
+
+/* 第3部分內容 */
+.three {
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #a0e9ff; */
+}
+.three h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.three h2::after {
+  content: "";
+  display: block;
+  background-color: #f00;
+  width: 50px;
+  height: 2px;
+  margin: 10px auto;
+}
+.three-box {
+  width: 1200px;
+  display: flex;
+  margin: 50px 0 0 0;
+}
+.three-list {
+  padding: 10px 5px;
+  margin: 0 15px;
+}
+.three-list a {
+  text-decoration: none;
+  color: rgb(37, 37, 37);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.three-list a:hover {
+  color: rgb(253, 79, 79);
+}
+
+.three-list p {
+  font-weight: 300;
+}
+.three-a {
+  text-decoration: none;
+  width: 150px;
+  background-color: rgb(255, 78, 78);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+.three-a:hover {
+  background-color: #aa2424;
+}
+
+/* 第4部分內容 */
+.four {
+  background-color: #121422;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 280px 0 0;
+  padding: 20px 10px;
+}
+.four-top {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 30px;
+}
+.four-topl {
+  width: 550px;
+  margin: 0 35px 0 0;
+}
+.four-topl h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: white;
+}
+.four-topl h2::after {
+  content: "";
+  display: block;
+  background-color: #f00;
+  width: 50px;
+  height: 2px;
+  margin: 10px 0;
+}
+.four-topl p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 35px 0 0 0;
+  color: #aaa;
+}
+.four-topr {
+  width: 550px;
+  height: 200px;
+  background-color: #ff2525;
+  margin: 90px 0 0 0;
+  padding: 30px;
+  border-radius: 5px 30px;
+}
+.four-topr h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+}
+.four-topr p {
+  color: white;
+  margin: 0 0 35px 0;
+}
+.four-topr a {
+  color: white;
+  text-decoration: none;
+}
+.four-topr a:hover {
+  text-decoration: underline;
+}
+.four-t {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  margin: 40px 0 0 0;
+}
+/* 卡片 */
+.four-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #121422;
+}
+.four-card a {
+  text-decoration: none;
+  color: #666;
+}
+.four-card {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 10px auto 40px;
+}
+.four-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.four-card hr {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.four-time1 {
+  display: inline-block;
+  font-size: 0.8rem;
+  border: 1px solid #a8a8a8;
+  border-radius: 5px;
+  margin: 10px 0 20px 15px;
+  padding: 2px 5px;
+}
+.four-time2 {
+  display: inline-block;
+  font-size: 0.8rem;
+  border: 1px solid #a8a8a8;
+  border-radius: 5px;
+  margin: 10px 0 20px 8px;
+  padding: 2px 5px;
+}
+.four-s {
+  display: flex;
+  margin: 10px 0 20px;
+  align-items: center;
+}
+.four-s h4 {
+  margin: 0 auto 0 15px;
+  font-weight: 500;
+}
+.four-s p {
+  margin: 0 15px 0 auto;
+  font-size: 0.9rem;
+}
+.four-btn {
+  background-color: #121422;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* margin: 0 0 100px 0; */
+}
+#four-a {
+  display: inline-block;
+  background-color: rgb(253, 36, 36);
+  text-decoration: none;
+  width: 150px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 0 100px 0;
+}
+
+#four-a:hover {
+  background-color: #aa2424;
+}
+
+/* 第5部分內容 */
+.five {
+  /* background-color: #9aa6ff; */
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0 0 0;
+}
+.five-top {
+  width: 1200px;
+  /* background-color: #bbb; */
+  margin: 0 0 50px 0;
+}
+.five-top h2 {
+  font-size: 1.8rem;
+}
+.five-top h2::after {
+  display: block;
+  content: "";
+  background-color: #f00;
+  width: 45px;
+  height: 2px;
+  margin: 5px 0 20px 0;
+}
+.five-top h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.five-box {
+  width: 1200px;
+  /* background-color: #b993ff; */
+  display: flex;
+  justify-content: center;
+}
+.five-box a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+.five-card {
+  width: 580px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0.75px 3px rgb(114, 114, 114);
+  margin: 10px;
+}
+.five-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.five-text {
+  padding: 20px 15px;
+}
+.five-text h3 {
+  margin: 0 0 10px 0;
+}
+.five-text hr {
+  color: #ffffff;
+}
+.five-text p {
+  margin: 12px 0;
+}
+.five-lesson:hover {
+  text-decoration: underline;
+}
+
+/* 第6部分內容 */
+.six {
+  width: 1280px;
+  /* background-color: #5ff384; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 300px 0 0 0;
+}
+.six h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  /* text-align: center; */
+}
+.six h2::after {
+  display: block;
+  content: "";
+  background-color: #f00;
+  width: 50px;
+  height: 2px;
+  margin: 8px auto 20px;
+}
+.six-box {
+  width: 1200px;
+  /* background-color: #555; */
+  display: flex;
+  justify-content: center;
+  margin: 22px 0;
+}
+.six-card {
+  width: 270px;
+  padding: 15px;
+  margin: 0 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0.75px 3px rgb(143, 143, 143);
+}
+.six-card h4 {
+  font-weight: 400;
+}
+.six-p {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+.six-p img {
+  width: 17%;
+  border-radius: 50px;
+  border: 0.5px solid #ddd;
+}
+.six-p p {
+  font-size: 0.9rem;
+  margin: 0 0 0 20px;
+  color: #666;
+}
+
+/* 第7部分內容 */
+.seven {
+  width: 1280px;
+  margin: 100px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seven h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.seven h2::after {
+  display: block;
+  content: "";
+  background-color: #f00;
+  width: 45px;
+  height: 2px;
+  margin: 5px auto 30px;
+}
+.seven-box {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 50px 0;
+}
+.seven-card {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+.seven-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+.seven-card a {
+  text-decoration: none;
+}
+.seven-card h3 {
+  color: #303030;
+  font-size: 1.4rem;
+  margin: 12px 0;
+}
+.seven-card a h3:hover {
+  color: #ff2525;
+}
+.seven-card p {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+#seven-a {
+  text-decoration: none;
+  width: 150px;
+  background-color: rgb(255, 78, 78);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+}
+#seven-a:hover {
+  background-color: #aa2424;
+}
+
+/* 頁尾 聯絡資訊 */
+.last-one {
+  width: 100%;
+  background-color: #121422;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0;
+}
+.last-box{
+  display: flex;
+  margin: 100px 0;
+  justify-content: center;
+}
+.last-cardL{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 0 0;
+  padding: 0 0 0 15px;
+  width: 500px;
+}
+.last-cardL img{
+  width: 40%;
+  margin-bottom: 12px;
+}
+.last-cardL a{
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: 8px;
+}
+.last-cardR{
+width: 700px;
+display: flex;
+flex-wrap: wrap;
+}
+.last-text{
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+}
+.last-word{
+  margin: 80px 0 0 0;
+}
+.last-text p{
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+.last-text a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.last-text a:hover{
+  color: rgb(255, 78, 78);
+}
+.last-a{
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.last-a a{
+  margin: 0 15px;
+}
+.last-two{
+  width: 100%;
+  margin: 20px 0;
+}
+.last-two p{
+  text-align: center;
+  color: #666;
+}
