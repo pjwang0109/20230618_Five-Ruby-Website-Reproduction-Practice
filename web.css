@@ -74,9 +74,9 @@ nav {
 .pic-one {
   /* border: 10px solid rgb(117, 70, 228); */
   margin-top: 80px;
-  display: block;
-  width: 1280px;
-  margin-inline: auto;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .pic-one img {
   width: 1280px;
